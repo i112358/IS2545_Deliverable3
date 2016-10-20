@@ -8,22 +8,22 @@ so that I can check out faster
 	Scenario 1:
 	Given that the user is on the register page
 	When he leaves the username field blank and registers
-	Then he will see error message "Please enter a username."
+	Then he will see error message "ERROR: Please enter a username."
 
 	Scenario 2:
 	Given that the user is on the register page
-	When he enters an invalid email address and registers
-	Then he will see an error message "The email address isn’t correct."
+	When he leaves the email field blank and registers
+	Then he will see an error message "ERROR: Please type your email address."
 	
 	Scenario 3:
 	Given that the user is on the register page
-	When he leaves the email field blank and registers
-	Then he will see an error message "Please type your email address."
+	When he enters an invalid email address and registers
+	Then he will see an error message "ERROR: The email address isn’t correct."	
 
 	Scenario 4:
 	Given that the user is on the register page
 	When he enters the wrong answer to the security question and registers
-	Then he will see an error message "Your answer was incorrect - please try again."
+	Then he will see an error message "ERROR: Your answer was incorrect - please try again."
 	
 	Scenario 5:
 	Given that the user is on the register page
