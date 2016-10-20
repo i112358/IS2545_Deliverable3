@@ -47,7 +47,7 @@ so that I can buy them
 	
 	Scenario 3:
 	Given that the user has 1 items in his shopping cart and is on the checkout page
-	When he changes the quantity of that product and clicks "Update" of a product
+	When he changes the quantity of that product to 2 and clicks "Update" of a product
 	Then the user shall have 2 items in his shopping cart
 	
 	Scenario 4:
@@ -69,4 +69,4 @@ so that I can place orders
 	Scenario 1:
 	Given that the user is in the login page
 	When the user enters invalid login information
-	Then the user should get error message "Invalid login credentials."
+	Then the user should get error message "ERROR: Invalid login credentials."

@@ -1,7 +1,5 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+User story 2
  */
 
 import org.junit.After;
@@ -49,10 +47,17 @@ public class Story2 {
     public void tearDown() {
         driver.manage().deleteAllCookies();
     }
-
-    // TODO add test methods here.
-    // The methods must be annotated with annotation @Test. For example:
     
+    //User story 2:
+    //As a user
+    //I would like to edit products in the shopping cart
+    //so that I can buy them
+    
+    /*
+    Given that the user has 0 items in his shopping cart
+    When he clicks "Add To Cart" of a product
+    Then the user shall have 1 item in his shopping cart
+    */
     @Test
     public void addOneItemTest() {
         //Go to a products page
@@ -70,6 +75,11 @@ public class Story2 {
         assertEquals("1",itemCnt.getText());      
     }
     
+    /*
+    Given that the user has 1 items in his shopping cart
+    When he clicks "Add To Cart" of a product
+    Then the user shall have 2 items in his shopping cart
+    */
     @Test
     public void addOneMoreItemTest() {
         //Add one product to cart
@@ -92,6 +102,11 @@ public class Story2 {
         assertEquals("2",itemCnt.getText());
     }
     
+    /*
+    Given that the user has 1 items in his shopping cart and is on the checkout page
+    When he changes the quantity of that product to 2 and clicks "Update" of a product
+    Then the user shall have 2 items in his shopping cart
+    */
     @Test
     public void updateItemTest() {
         //Add one item to the shopping cart
@@ -117,6 +132,11 @@ public class Story2 {
         assertEquals("2",itemCnt.getAttribute("value"));
     }
     
+    /*
+    Given that the user has 2 different items in his shopping cart and is on the checkout page
+    When he clicks "Remove" of a product
+    Then the user shall have 1 item in his shopping cart
+    */
     @Test
     public void removeItem2to1() {
         //Add one product to cart
@@ -143,6 +163,11 @@ public class Story2 {
         assertEquals("1",itemCnt.getText());
     }
     
+    /*
+    Given that the user has 1 items in his shopping cart and is on the checkout page
+    When he clicks "Remove" of a product
+    Then the user will see message "Oops, there is nothing in your cart."
+    */
     @Test
     public void removeItem1to0() {
         //Add one item to the shopping cart
