@@ -1,14 +1,10 @@
 # IS2545 - Deliverable 3: BDD Testing
 
 ###Summary
-The most frustrating part of this assignment was finding the web elements and getting their value/texts.
-I spent some time using the Chrome DevTools just finding where the elements were and how to get to them by either id/class/xpath.
-And I feel like that I spent more time testing my tests than actually testing the website...
-But it was an interesting assignment, and as I wrote more and more tests, I became more familiar with the process and could gradually find elements with more ease.
-I failed to implement one of the tests on registering an account because of the captcha.
-In the sucess scenario, the user should see a message telling them they registered successfully.
-However, because it was not possible to automate the process to answer the captcha correctly, I could not test the success scenario.
-All the other tests were implemented without problem and all succeeded.
+	The most frustrating part of this assignment was finding the web elements and getting their value/texts. I spent some time using the Chrome DevTools just finding where the elements were and how to get to them by either id/class/xpath. And I feel like that I spent more time testing my tests than actually testing the website...
+	But it was an interesting assignment, and as I wrote more and more tests, I became more familiar with the process and could gradually find elements with more ease.
+	I failed to implement one of the tests (Scenario 5 of User story 1) on registering an account because of the captcha. In the sucess scenario, the user should see a message telling them they registered successfully. However, because it was not possible to automate the process to answer the captcha correctly, I could not test the success scenario.
+	All the other tests were implemented without problem and all succeeded.
 
 
 ###User Stories
