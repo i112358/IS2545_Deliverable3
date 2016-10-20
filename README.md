@@ -1,4 +1,4 @@
-# IS2545_Deliverable3
+# IS2545 - Deliverable 3: BDD Testing
 
 User story 1:
 As a user
