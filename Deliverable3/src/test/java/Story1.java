@@ -25,7 +25,7 @@ public class Story1 {
     public Story1() {
     }
     
-     @BeforeClass
+    @BeforeClass
     public static void setUpClass() {
         driver.get(baseUrl);
     }
